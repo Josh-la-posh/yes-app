@@ -53,7 +53,7 @@ function Header() {
   return (
     <>
       <header
-        className={`flex items-center justify-between md:px-10 px-5 py-5 fixed w-full left-0 top-0 z-30 bg-opacity-[0.] ${
+        className={`flex items-center justify-between md:px-10 bg-white px-5 py-5 fixed w-full left-0 top-0 z-30 bg-opacity-[0.95] ${
           hasScrolled ? "border-b dark:border-slate-700 shadow-sm" : ""
         }`}
       >
