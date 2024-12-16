@@ -46,7 +46,7 @@ export default function HowItWorks() {
           <div className="hidden md:block absolute top-[18%] left-0 w-full h-0.5 bg-gray-200 -translate-y-1/2" />
           
           <div className="relative flex flex-col items-center md:grid md:grid-cols-5 gap-8">
-            {steps.map((step, index) => (
+            {steps.map((step) => (
               <div key={step.number} className="flex flex-col items-center md:items-start relative">
                 {/* Number circle */}
                 <div className={`w-12 h-12 rounded-full ${step.background} ${step.color} flex items-center justify-center text-xl font-semibold mb-4 relative z-10`}>

@@ -4,12 +4,13 @@ import { RxCaretDown } from "react-icons/rx";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 // import logo from "@/public/Yes logo.png";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { CgClose } from "react-icons/cg";
+import { AiOutlineMenu } from "react-icons/ai";
 
 function Header() {
-  const pathName = usePathname();
   const [hasScrolled, setHasScrolled] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleArrow, setToggleArrow] = useState(false);
@@ -72,7 +73,7 @@ function Header() {
           <div className="flex items-center gap-5">
             <nav
               className={`${
-                toggleMenu ? "flex flex-col" : "hidden"
+                toggleMenu ? "flex flex-col bg-white" : "hidden"
               } md:flex md:items-center md:gap-16 absolute md:static top-0 left-0 h-screen w-full md:h-auto md:mt-0 mt-16 transition-all duration-300 ease-in-out `}
             >
               <ul className="flex flex-col md:flex-row md:gap-5">
@@ -118,6 +119,18 @@ function Header() {
                 </Button>
               </div>
             </nav>
+
+            <Button
+              onClick={() => setToggleMenu(!toggleMenu)}
+              variant="outline"
+              className="text-[20px] transition-all duration-500 ease-in-out md:hidden flex"
+            >
+              {toggleMenu ? (
+                <CgClose />
+              ) : (
+                <AiOutlineMenu className="text-[20px]" />
+              )}
+            </Button>
           </div>
         
       </header>

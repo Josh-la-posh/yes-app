@@ -1,4 +1,3 @@
-import { BlogCard } from "../ui/blog-card"
 import { Button } from '@/components/ui/button'
 import BlogList, { BlogPost } from "@/types/blog";
 

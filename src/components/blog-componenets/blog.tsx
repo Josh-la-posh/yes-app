@@ -1,6 +1,4 @@
-import { BlogCard } from "../ui/blog-card"
 import { Button } from '@/components/ui/button'
-import BlogList, { BlogPost } from "@/types/blog";
 import Image from "next/image";
 import { Input } from "../ui/input";
 

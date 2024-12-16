@@ -1,6 +1,5 @@
-import { Zap } from 'lucide-react'
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Zap } from 'lucide-react';
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function SignupCredits() {
   return (
