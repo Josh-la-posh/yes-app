@@ -1,5 +1,6 @@
 import BlogList, { BlogPost } from "@/types/blog";
 import Pagination from "./pagination";
+import { useState } from "react";
 
 const homeBlogPosts: BlogPost[] = [
   {
@@ -73,6 +74,12 @@ const homeBlogPosts: BlogPost[] = [
 ]
 
 export default function FeaturedPost() {
+  const [currentPage, setCurrentPage] = useState(1);
+  
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    console.log('Navigate to page:', page);
+  }
   return (
     <section className="">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,7 +87,7 @@ export default function FeaturedPost() {
         <BlogList posts={homeBlogPosts} />
       </div>
       <div className="flex justify-center">
-        <Pagination currentPage={1} totalPages={30} />
+        <Pagination currentPage={currentPage} totalPages={30} onPageChange={handlePageChange} />
       </div>
     </section>
   )
