@@ -4,12 +4,12 @@ import { Button } from '@/components/ui/button'
 export default function ContractBanner() {
   return (
     <div className="h-[596px] relative flex items-end">
-        <div className="h-[395px] max-w-[75%] mx-auto absolute top-0 right-0 left-0">
+        <div className="h-[425px] max-w-[75%] mx-auto absolute top-0 right-0 left-0">
             <div className="h-full bg-[#5E17EB] rounded-lg p-8 flex flex-col items-center justify-center relative overflow-hidden">
                 {/* Left side with illustration */}
-                <div className="mb-6 md:mb-0 md:mr-8 absolute bottom-0 left-0">
+                <div className="mb-6 md:mb-0 md:mr-8 absolute bottom-[-30px] md:bottom-[-10px] left-0">
                     <Image
-                    src="/placeholder.svg?height=150&width=150"
+                    src="/banner_img.svg"
                     alt="Person pointing at a contract"
                     width={150}
                     height={150}
@@ -18,12 +18,12 @@ export default function ContractBanner() {
                 </div>
 
                 {/* Center content */}
-                <h2 className="max-w-[487px] text-center text-2xl md:text-5xl font-bold text-white mb-4">
+                <h2 className="max-w-[487px] text-center text-3xl md:text-5xl font-bold text-white mb-8">
                     Say Yes to a contract agreement and avoid losses.
                 </h2>
-                <Button variant="secondary" size="lg">
+                <button className='bg-white text-[#070F0B] px-10 py-3 rounded-lg'>
                     Sign Up today
-                </Button>
+                </button>
 
                 {/* Right side with avatars */}
                 {/* <div className="hidden md:block absolute top-4 right-4">
@@ -53,7 +53,7 @@ export default function ContractBanner() {
                 <div className="absolute bottom-0 right-0 w-16 h-16 bg-purple-500 rounded-tl-full"></div>
             </div>
         </div>
-        <div className="h-[412px] w-full bg-black p-4">
+        <div className="h-[465px] w-full bg-black p-4">
         </div>
     </div>
   )

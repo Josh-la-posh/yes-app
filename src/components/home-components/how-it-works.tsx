@@ -38,8 +38,8 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="">
+      <div className="max-w-7xl">
         <h2 className="text-xl md:text-3xl text-center md:text-left text-[#101720] text-[500] mb-12">How it works</h2>
         <div className="relative">
           {/* Connecting line */}

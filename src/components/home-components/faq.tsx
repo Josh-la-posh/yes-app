@@ -34,7 +34,7 @@ import {
   
   export default function FAQ() {
     return (
-      <section className="py-16">
+      <section className="">
         <div className="px-4 sm:px-6 lg:px-8 text-[#101720]">
             <h2 className="text-xl md:text-3xl text-center md:text-left text-[500] mb-12">
                 Frequently Asked Questions (FAQs)

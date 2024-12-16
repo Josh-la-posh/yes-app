@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 // import logo from "@/public/Yes logo.png";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 function Header() {
   const pathName = usePathname();
@@ -34,11 +34,11 @@ function Header() {
   const navLinks = [
     {
       name: "Home",
-      link: "#",
+      link: "/",
     },
     {
       name: "Blog",
-      link: "#",
+      link: "/Blog",
     },
     {
       name: "Solutions",
@@ -58,7 +58,15 @@ function Header() {
         }`}
       >
         <Link href="/">
-          {/* <Image className="w-16 " src={logo} priority alt="logo" /> */}Logo
+            <div className="w-[80px] h-[48px]">
+            <Image
+              src='/logo.svg'
+              alt='Logo'
+              priority
+              width={500}
+              height={500}
+            />
+          </div>
         </Link>
 
           <div className="flex items-center gap-5">
