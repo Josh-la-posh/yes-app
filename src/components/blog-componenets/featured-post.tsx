@@ -1,3 +1,5 @@
+'use client'
+
 import BlogList, { BlogPost } from "@/types/blog";
 import Pagination from "./pagination";
 import { useState } from "react";
