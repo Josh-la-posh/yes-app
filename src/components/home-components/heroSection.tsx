@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
             Create Simple Contracts in 3 Minutes or Less
           </h1>
           <p className="text-md md:text-xl text-[#5D615F] mb-8">
-            With the Yes App you can avoid unnecessary disagreements with clients and customers and prevent financial loss when you do business. We've made it easy to CREATE, SEND, RECEIVE & SIGN simple contracts for any given situation.
+            With the Yes App you can avoid unnecessary disagreements with clients and customers and prevent financial loss when you do business. We&apos;ve made it easy to CREATE, SEND, RECEIVE & SIGN simple contracts for any given situation.
           </p>
           <div className="">
             <Button onClick={() => router.push("/Auth/register")}>
