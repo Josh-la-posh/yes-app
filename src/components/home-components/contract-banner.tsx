@@ -42,10 +42,31 @@ export default function ContractBanner() {
 
                 
                 <div className="hidden md:block h-16 w-16 rounded-full bg-[#F4CE9B] absolute top-[-10px] right-32">
+                    <Image
+                        src='/trusted_avatar_4.svg'
+                        alt='User'
+                        width={400}
+                        height={500}
+                        className="rounded-full border-2 border-white"
+                    />
                 </div>
                 <div className="hidden md:block h-16 w-16 rounded-full bg-black absolute top-8 right-8">
+                    <Image
+                        src='/trusted_avatar_5.svg'
+                        alt='User'
+                        width={400}
+                        height={500}
+                        className="rounded-full border-2 border-white"
+                    />
                 </div>
                 <div className="hidden md:block h-16 w-16 rounded-full bg-yellow-400 absolute top-32 right-0">
+                    <Image
+                        src='/trusted_avatar_10.svg'
+                        alt='User'
+                        width={400}
+                        height={500}
+                        className="rounded-full border-2 border-white"
+                    />
                 </div>
 
                 {/* Decorative element */}

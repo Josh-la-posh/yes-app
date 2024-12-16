@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import Image from "next/image";
 import { Input } from "../ui/input";
+import React from 'react';
 
 const blog = {
     id: '1',
@@ -16,12 +17,14 @@ const blog = {
   }
 
 export default function BlogPage() {
+  const inputRef = React.useRef<HTMLInputElement>(null);
   return (
     <section className="">
       <div className="flex justify-between mb-12">
         <h2 className="text-xl md:text-3xl text-center md:text-left text-[#101720] text-[500]">Blogs</h2>
         <div className="flex md:w-auto max-w-sm gap-1 p-1 border border-[#A6A7AC] bg-[#F3F3F3] rounded-md">
           <Input
+            ref={inputRef}
             type="text"
             placeholder="Search for article"
             className="flex-grow outline-none bg-[#F3F3F3]"

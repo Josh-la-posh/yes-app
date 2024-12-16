@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const HeroSection: React.FC = () => {
   const router = useRouter();
@@ -23,12 +24,32 @@ const HeroSection: React.FC = () => {
         </div>
         <div className="md:flex-1 flex gap-4">
           <div className="space-y-4">
-            <img src="/hero_img_1.svg" alt="Hero Image" className="w-full" />
-            <img src="/hero_img_2.svg" alt="Hero Image" className="w-full" />
+            <Image
+              src="/hero_img_1.svg"
+              alt="Hero Image"
+              width={500}
+              height={500}
+              className="w-full" />
+            <Image
+              src="/hero_img_2.svg"
+              alt="Hero Image"
+              width={500}
+              height={500}
+              className="w-full" />
           </div>
           <div className="space-y-4 md:mt-4">
-            <img src="/hero_img_3.svg" alt="Hero Image" className="w-full" />
-            <img src="/hero_img_4.svg" alt="Hero Image" className="w-full" />
+            <Image
+              src="/hero_img_3.svg"
+              alt="Hero Image"
+              width={500}
+              height={500}
+              className="w-full" />
+            <Image
+              src="/hero_img_4.svg"
+              alt="Hero Image"
+              width={500}
+              height={500}
+              className="w-full" />
           </div>
         </div>
       </div>

@@ -1,16 +1,17 @@
+import Image from "next/image"
 
 export default function TrustedBy() {
     const avatars = [
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
-      "/placeholder.svg?height=80&width=80",
+      "/trusted_avatar_1.svg",
+      "/trusted_avatar_2.svg",
+      "/trusted_avatar_3.svg",
+      "/trusted_avatar_4.svg",
+      "/trusted_avatar_5.svg",
+      "/trusted_avatar_6.svg",
+      "/trusted_avatar_7.svg",
+      "/trusted_avatar_8.svg",
+      "/trusted_avatar_9.svg",
+      "/trusted_avatar_10.svg",
     ]
   
     return (
@@ -46,10 +47,12 @@ export default function TrustedBy() {
                     ][index],
                   }}
                 >
-                  <img
+                  <Image
                     src={avatar}
                     alt={`Trusted user ${index + 1}`}
                     className="w-full h-full object-cover"
+                    width={500}
+                    height={500}
                   />
                 </div>
               ))}
@@ -70,10 +73,12 @@ export default function TrustedBy() {
                     ][index],
                   }}
                 >
-                  <img
+                  <Image
                     src={avatar}
                     alt={`Trusted user ${index + 6}`}
                     className="w-full h-full object-cover"
+                    width={500}
+                    height={500}
                   />
                 </div>
               ))}

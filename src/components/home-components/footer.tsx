@@ -5,6 +5,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Footer() {
+  const inputRef = React.useRef<HTMLInputElement>(null);
   return (
     <footer className="bg-white border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -22,6 +23,7 @@ export default function Footer() {
           </div>
           <div className="flex md:w-auto max-w-sm gap-1 p-1 border border-[#A6A7AC] rounded-md">
             <Input
+              ref={inputRef}
               type="email"
               placeholder="Enter your email"
               className="flex-grow outline-none"
